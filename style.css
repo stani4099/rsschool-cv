@@ -3,6 +3,7 @@
     --section-info-color: #29292b;
     --section-title-color: #ff9c01;
     --font-color: #3e333b;
+    --padding: 70px
 }
 
 * {
@@ -15,9 +16,86 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: #ffff;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 30px;
     background-color: var(--body-bg-color);
+    padding: var(--padding) 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+h1 {
+    color: #ffff;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    background-color: #ffff;
+    width: 1260px;
+    margin: 0 auto;
+    padding: 0 var(--padding);
+
+}
+
+.img-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    border: var(--section-info-color) 15px solid;
+    width: 400px;
+    transform: translateX(0px);
+    background-color: var(--section-title-color);
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    padding: var(--padding) 0;
+}
+
+.my-info {
+    background-color: var(--section-title-color);
+    padding: 40px 0;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: calc(var(--padding) * -1);
+    margin-left: calc(var(--padding) * -1);
+}
+
+.my-status {
+    font-size: 30px;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.nav {
+    background-color: var(--section-title-color);
+    padding: 20px;
+    margin-left: calc(var(--padding) * -1);
+}
+
+.nav-menu {
+    column-gap: 20px;
+    display: flex;
+    font-weight: 700;
+    font-size: 40px;
 }
