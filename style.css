@@ -1,0 +1,23 @@
+:root {
+    --body-bg-color: #ffdc98;
+    --section-info-color: #29292b;
+    --section-title-color: #ff9c01;
+    --font-color: #3e333b;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    background-color: var(--body-bg-color);
+}
