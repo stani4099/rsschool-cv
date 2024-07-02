@@ -64,7 +64,6 @@ p {
 }
 
 .wrapper {
-    background-color: #ffff;
     width: 950px;
     margin: 0 auto;
     padding: 0 var(--padding);
@@ -73,6 +72,9 @@ p {
 
 .flex-container {
     display: flex;
+}
+
+.main {
     padding-top: var(--padding);
 }
 
@@ -162,4 +164,17 @@ p {
 
 code {
     font-size: 20px;
+}
+
+
+.flex-footer {
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--section-title-color);
+    margin: 0 calc(var(--padding) * -1);
+    padding: 10px;
+}
+
+.footer-img-wrapper {
+    width: 200px;
 }
