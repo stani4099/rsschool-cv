@@ -1,0 +1,180 @@
+:root {
+    --body-bg-color: #ffdc98;
+    --section-info-color: #29292b;
+    --section-title-color: #ff9c01;
+    --font-color: #3e333b;
+    --padding: 70px
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: #ffff;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: var(--body-bg-color);
+    padding: var(--padding) 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+h1 {
+    color: #ffff;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    background-color: var(--section-title-color);
+    padding: 20px 100px 20px 20px;
+    margin-left: calc(var(--padding) * -1);
+    text-align: right;
+    font-size: 25px;
+}
+
+p {
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.wrapper {
+    width: 950px;
+    margin: 0 auto;
+    padding: 0 var(--padding);
+
+}
+
+.flex-container {
+    display: flex;
+}
+
+.main {
+    padding-top: var(--padding);
+}
+
+.img-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    border: var(--section-info-color) 15px solid;
+    width: 300px;
+    transform: translateX(0px);
+    background-color: var(--section-title-color);
+}
+
+.me {
+    display: flex;
+    align-items: center;
+    padding: var(--padding) 0;
+}
+
+.my-name {
+    background-color: var(--section-title-color);
+    padding: 25px 0;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: calc(var(--padding) * -1);
+    margin-left: calc(var(--padding) * -1);
+}
+
+.my-status {
+    font-size: 25px;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.nav {
+    background-color: var(--section-title-color);
+    padding: 20px;
+    margin-left: calc(var(--padding) * -1);
+    margin-right: calc(var(--padding) * -1);
+}
+
+.nav-menu {
+    column-gap: 20px;
+    display: flex;
+    font-weight: 700;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.portfolio-link {
+    transition: none;
+}
+
+.portfolio-link:hover {
+    color: var(--section-title-color);
+}
+
+.aside-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+}
+
+
+.my-contact,
+.my-skills {
+    margin-right: calc(var(--padding)* -1);
+    padding: 40px;
+    background-color: var(--section-info-color);
+    flex-grow: 1;
+}
+
+.contact-item,
+.skills-item {
+    color: #ffff;
+    font-size: 20px;
+}
+
+.aside-title,
+.skills-title {
+    background-color: transparent;
+    padding: 5px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: #ffff;
+    border: var(--section-title-color) 8px solid;
+}
+
+code {
+    font-size: 20px;
+}
+
+
+.flex-footer {
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--section-title-color);
+    margin: 0 calc(var(--padding) * -1);
+    padding: 10px;
+}
+
+.footer-img-wrapper {
+    width: 200px;
+}

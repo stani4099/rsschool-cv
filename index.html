@@ -5,9 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <header class="header">
+        <div class="wrapper">
+            <section class="me">
+                <div class="img-wrapper">
+                    <img src="avatar.png" alt="avatar">
+                </div>
+                <div class="my-name">
+                    <h1>Stanislav Kharitonov</h1>
+                    <span class="my-status">RSSchool Student</span>
+                </div>
+            </section>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#About-Me" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#Education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#Code" class="nav-link">Code Example</a></li>
+                    <li class="nav-item"><a href="#Portfolio" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#Languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <div class="flex-container">
+                <div class="column">
+                    <section class="about-me" id="About-Me">
+                        <h2>About Me</h2>
+                        <p>Hi, I am now starting my start as a frontend developer, in this field I am attracted to
+                            process
+                            automation, creating interfaces and designing large scale applications</p>
+                    </section>
+                    <section class="my-education" id="Education">
+                        <h2>Education</h2>
+                        <p>2012-2014: MIREA – Technological University</p>
+                        <p>2020-2020: Yandex Practicum</p>
+                        <p>2021-2021: Self Study</p>
+                    </section>
+                    <section class="code-example" id="Code">
+                        <h2>Code Example</h2>
+                        <pre><code>
+    function sayHello() {
+        console.log('Hello!')
+    }
+                </code></pre>
+                    </section>
+                    <section class="portfolio" id="Portfolio">
+                        <h2>Projects</h2>
+                        <p><a class="portfolio-link" target="_blank"
+                                href="https://github.com/stani4099/rsschool-cv">rsschool-cv</a></p>
+                    </section>
+                    <section class="lang" id="Languages">
+                        <h2>Languages</h2>
+                        <p>Russian: native</p>
+                        <p>English: A1</p>
+                    </section>
+                </div>
+                <div class="column">
+                    <div class="aside-flex">
+                        <section class="my-contact">
+                            <h2 class="aside-title">Contact Me</h2>
+                            <ul class="contact-menu">
+                                <li class="contact-item">Telegram: @stanislav4099</li>
+                                <li class="contact-item">Email: stanislav4099@gmail.com</li>
+                            </ul>
+                        </section>
+                        <section class="my-skills">
+                            <h2 class="skills-title">Skills</h2>
+                            <ul class="skills-menu">
+                                <li class="skills-item">JavaScript</li>
+                                <li class="skills-item">HTML</li>
+                                <li class="skills-item">CSS</li>
+                                <li class="skills-item">TypeScript</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="flex-container flex-footer">
+                <a class="footer-link" href="https://github.com/stani4099">My GitHub</a>
+                <p>2024</p>
+                <div class="footer-img-wrapper"><a href=" https://rs.school/courses/javascript-ru" target="_blank"><img
+                            src="rsschool-logo.svg" alt="logo"></a></div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
